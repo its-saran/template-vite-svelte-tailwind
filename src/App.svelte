@@ -18,7 +18,7 @@
             <img src={svelteLogo} class="logo svelte h-48 p-6" alt="Svelte Logo"/>
         </a>
         <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer" class="flex justify-center">
-            <img src={tailwindLogo} class="logo tailwind w-64 p-6" alt="Tailwind Logo"/>
+            <img src={tailwindLogo} class="logo tailwind p-6" alt="Tailwind Logo"/>
         </a>
     </div>
 
@@ -37,6 +37,10 @@
     .logo {
         will-change: filter;
         transition: filter 300ms;
+    }
+
+    .logo.tailwind {
+        width: 240px;
     }
     .logo.vite:hover {
         filter: drop-shadow(0 0 2em #646cffaa);
